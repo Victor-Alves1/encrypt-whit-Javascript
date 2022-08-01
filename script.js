@@ -1,4 +1,6 @@
+// Função para criptografar
 function encrypt(){
+    //Função para mudar os caracteres
     function crypt (str, disp){
         for(let i = 0; i<str.length; i++){
             if(disp == '-1'){
@@ -13,6 +15,7 @@ function encrypt(){
         }
     }
 
+    //Função para usar a string invertida
     function reverseString(str){
         var joinString = str.reverse();
         return (cryptoCode = joinString);
@@ -43,7 +46,9 @@ function encrypt(){
     }
 };
 
+//Função para descriptografar
 function decrypt(){
+    //Função para mudar os caracteres    
     function crypt (str, disp){
         for(let i = 0; i<str.length; i++){
             if(disp == 'uno'){
@@ -58,6 +63,7 @@ function decrypt(){
         }
     }
 
+    //Função para usar a string invertida
     function reverseString(str){
         var joinString = str.reverse();
         return (cryptoCode = joinString);
