@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encryption in JavaScript</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>
+                Máquina de criptografia
+            </h1>
+            <p>
+                A criptografia foi criada para esconder informações dentro de uma mensagem.
+            </p>
+            <h2>Criptografar</h2>
+            <span>Digite um valor chave da criptografia:</span>
+            <input type="number" name="" id="chave">
+            <br>
+            <span>Digite a mensagem a ser criptografada:</span>
+            <br>
+            <textarea name="" id="mensagem" cols="50" rows="10" wrap="off"></textarea>
+            <br>
+            <button onclick="encrypt()">Criptografar</button>
+            <button onclick="decrypt()">Descriptografar</button>
+            
+        </div>
+        <div id="res"></div>
+        <hr>
+
+        <div>
+            <h2>Esta criptografia funciona em 3 passos</h2>
+            <p>
+                Na primeira passada, somente caracteres que sejam letras minúsculas e maiúsculas devem ser deslocadas X posições para a direita (esse valor deve ser dito no momento da encriptação), segundo a tabela ASCII: letra 'a' deve virar letra 'd', letra 'y' deve virar caractere '|' e assim sucessivamente. Na segunda passada, a linha deverá ser invertida. Na terceira e última passada, todo e qualquer caractere a partir da metade em diante (truncada) devem ser deslocados uma posição para a esquerda na tabela ASCII. Neste caso, 'b' vira 'a' e 'a' vira '`'. (Inspirado do desafio 1024 da plataforma Beecrowd)
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
